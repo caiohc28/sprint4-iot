@@ -54,13 +54,13 @@ O **MOTOSECURITYX** é um sistema IoT completo para monitoramento de motocicleta
 
 ### Conexões dos Sensores
 
-| Componente | Pino ESP32 | Observações |
-|------------|------------|-------------|
-| LED | GPIO 2 | Com resistor 220Ω |
-| DHT22 | GPIO 12 | - |
-| LDR | GPIO 36 (VP) | Com resistor 10kΩ em pull-down |
-| HC-SR04 Trig | GPIO 5 | - |
-| HC-SR04 Echo | GPIO 18 | - |
+| Componente | Pino ESP32 |
+|------------|------------|
+| LED | GPIO 2 |
+| DHT22 | GPIO 12 | 
+| LDR | GPIO 36 (VP) | 
+| HC-SR04 Trig | GPIO 5 | 
+| HC-SR04 Echo | GPIO 18 |
 
 # 📊 Resultados finais
 
@@ -72,11 +72,14 @@ O **MOTOSECURITYX** é um sistema IoT completo para monitoramento de motocicleta
   Situação: Será detectada pelos sensores
 
 ========== Monitoramento MOTOSECURITYX ==========
+
 🏍️  ID da Moto: 2
 🔖 Placa: YCM9D73
 📋 Modelo: Elite 125
 📍 Situação: Dentro
+
 -------------- Sensores --------------
+
 🌡️  Temperatura: 25.3 °C
 💧 Umidade: 60.2 %
 💡 Luminosidade: 2048
