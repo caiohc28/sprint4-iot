@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Caio HC",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 9.6, "left": 158.44, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -162.9,
+      "left": -226.2,
+      "attrs": { "temperature": "9.7", "humidity": "26.5" }
+    },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": -35.2, "left": 308, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 130.8,
+      "left": 282.2,
+      "attrs": { "color": "red", "flip": "" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -296.1,
+      "left": 168.7,
+      "attrs": { "distance": "74" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:SDA", "esp:12", "green", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h-336", "v57.6" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "h-124.8", "v239.6", "h-220.8", "v-67.2" ] ],
+    [ "ldr1:AO", "esp:35", "green", [ "h-336", "v76.1" ] ],
+    [ "led1:C", "esp:2", "black", [ "v0" ] ],
+    [ "led1:A", "esp:3V3", "red", [ "v0", "h9.2", "v-144", "h-153.6" ] ],
+    [ "ultrasonic1:ECHO", "esp:18", "green", [ "h8.8", "v316.8" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
