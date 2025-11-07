@@ -74,17 +74,25 @@ O **MOTOSECURITYX** é um sistema IoT completo para monitoramento de motocicleta
 ========== Monitoramento MOTOSECURITYX ==========
 
 🏍️  ID da Moto: 2
+
 🔖 Placa: YCM9D73
+
 📋 Modelo: Elite 125
+
 📍 Situação: Dentro
 
 -------------- Sensores --------------
 
 🌡️  Temperatura: 25.3 °C
+
 💧 Umidade: 60.2 %
+
 💡 Luminosidade: 2048
+
 📏 Distância: 35.4 cm
+
 ✅ Status: Moto no pátio
+
 📡 Dados enviados para ThingSpeak com sucesso!
 
 
